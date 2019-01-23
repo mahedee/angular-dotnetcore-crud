@@ -1,0 +1,8 @@
+<div class="row">
+  <div class="col-md-4">
+    <app-add-or-update-jogging (joggingCreated)="createOrUpdateJogging($event)" [joggingInfo]="currentJogging"></app-add-or-update-jogging>
+  </div>
+  <div class="col-md-8">
+    <app-grid-jogging [joggingData]="joggingData" (editClicked)="editClicked($event)" (newClicked)="newClicked()" (recordDeleted)="deleteClicked($event)"></app-grid-jogging>
+  </div>
+</div>
